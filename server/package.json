@@ -1,0 +1,25 @@
+{
+  "name": "-ms_slack_grus_tep_online_full-time_2021_1",
+  "version": "1.0.0",
+  "description": "# Learning competencies:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exponentsoftware/-MS_Slack_Grus_Tep_Online_Full-time_2021_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/exponentsoftware/-MS_Slack_Grus_Tep_Online_Full-time_2021_1/issues"
+  },
+  "homepage": "https://github.com/exponentsoftware/-MS_Slack_Grus_Tep_Online_Full-time_2021_1#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
