@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/exponentsoftware/-MS_Slack_Grus_Tep_Online_Full-time_2021_1#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
