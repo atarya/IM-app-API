@@ -28,4 +28,6 @@ app.get("/api/chat/:id", (req, res) => {
     res.send(singleChat)
 })
 
+app.use('/api/user', require('./Routes/user'));
+
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
