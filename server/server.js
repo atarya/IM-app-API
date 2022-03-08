@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000
 dotenv.config({ path: "./../.env" });
 const cors = require('cors');
 const connectDB = require('./config/db');
+const { notFound, errorHandler } = require('./Middleware/error');
 
 connectDB();
 app.use(express.json());
@@ -28,6 +29,9 @@ app.get("/api/chat/:id", (req, res) => {
     res.send(singleChat)
 })
 
-app.use('/api/user', require('./Routes/user'));
+app.use('/api/user', require('./routes/user'));
+
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
