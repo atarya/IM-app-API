@@ -15,7 +15,7 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
     res.send("API is working");
 })
 
@@ -26,7 +26,10 @@ app.use("/api/message", require("./Routes/message"));
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(PORT, console.log(`Server running on port ${PORT}`));
+const server = app.listen(
+    PORT,
+    console.log(`Server running on PORT ${PORT}...`.yellow.bold)
+);
 
 const io = require("socket.io")(server, {
     pingTimeout: 60000,
